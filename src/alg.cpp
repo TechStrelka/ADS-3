@@ -66,7 +66,6 @@ unsigned int seqCollatz(unsigned int *maxlen,
             best_len = current_len;
             best_num = i;
         }
-        
         if (i == rbound) break;
     }
 
