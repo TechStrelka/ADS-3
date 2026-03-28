@@ -29,7 +29,7 @@ unsigned int collatzLen(uint64_t num) {
         return 0;
     }
 
-    unsigned int count = 0;
+    unsigned int count = 1;
 
     while (num != 1) {
         if (num % 2 == 0) {
@@ -56,7 +56,8 @@ unsigned int seqCollatz(unsigned int *maxlen,
         while (n > 1) {
             if (n % 2 == 0) {
                 n = n / 2; 
-            } else {
+            }
+            else {
                 n = 3 * n + 1;
             }
             current_len++;
